@@ -1,0 +1,206 @@
+#home {
+	background: #09b314;
+	color: white;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.clima{
+margin: 20px;
+}
+/*login*/
+
+.card-signin {
+	border: 0;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-signin .card-title {
+	margin-bottom: 2rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+  }
+  
+  .card-signin .card-body {
+	padding: 2rem;
+  }
+  
+  .form-signin {
+	width: 100%;
+  }
+  
+  .form-signin .btn {
+	font-size: 80%;
+	border-radius: 5rem;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	padding: 1rem;
+	transition: all 0.2s;
+  }
+  
+  .form-label-group {
+	position: relative;
+	margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+	height: auto;
+  
+  }
+  
+  
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+	padding: 5px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #000000;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor {
+	width: 1px;
+	background: rgba(0,0,0,0.6);
+	margin: 12px 15px;
+}
+
+.login{
+		margin-left: 60%;
+		margin-right: 5px;
+		border-radius: 24px;
+}
+
+
+.cadastro{
+	margin-left: 10%;
+   
+    border-radius: 24px;
+}
+.suporte{
+	margin-left: 50px;
+    border-radius: 24px;
+	background: #49ed1c;
+}
+.cor-verde:hover {
+	background: rgba(0, 0, 0, 0.458);
+	color: rgb(0, 0, 0);
+}
+.cor-verde{
+	background: #49ed1c;
+}
+.btn-custon2{
+	color: rgb(4, 11, 5);
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.cor-headd{
+	background: #49ed1c;
+}
+/* Capa
+-----------------------------*/
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: rgb(255, 255, 255);
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-verde {
+	background: #49ed1c;
+}
+
+.btn-verde:hover {
+	background: white;
+	color: rgb(0, 0, 0);
+}
+
+
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+/*   seção recursos */
+
+#carouselExampleIndicators {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
+	
+
+}
+
+
+/*   seção Noticias */
+.carousel-caption{
+	background: rgba(0,0,0,0.6);
+  }
+
+/* Rodapé 1
+-----------------------------*/
+footer p a {
+	margin: 5px 15px;
+   
+}
+
+/* Rodapé 2
+-----------------------------*/
+.segundoFooter {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.segundoFooter h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.segundoFooter .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+.segundoFooter .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+.segundoFooter ul {
+	list-style: none;
+}
+
+.segundoFooter ul li {
+	float: right;
+	margin: 0 5px;
+}
+

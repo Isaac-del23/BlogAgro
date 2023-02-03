@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../css/subPaginas.css">
+
+    <title>MGBlog - Notícias</title>
+
+
+</head>
+
+<body>
+
+    <header><!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+           <div class="container">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../img/logocopia.png">
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../html/Agro.html">Agro</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn-outline-light ml-4 dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          informações
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-divider">Agricutura</div>
+                            <a class="dropdown-item" href="#">Técnicas de plantio </a>
+                            <a class="dropdown-item" href="#">Técnicas de Cultivo do solo</a>
+                            <a class="dropdown-item" href="#">Técnicas de criação de animais </a>
+                            <div class="dropdown-divider">Agricutura</div>
+                            <a class="dropdown-item" href="tecagro.html">Tecnologia Agro</a>
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" onclick="acao1()"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" onclick="acao1()">Café</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" onclick="acao1()">Milho</a>
+                    </li>
+                  </ul>
+                <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link disabled" href="#" onclick="acao1()"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" onclick="acao1()">Café</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" onclick="acao1()">Milho</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="" >Feijão</a>
+
+                        </li>
+ 
+
+
+                    </ul>
+                </div> -->
+
+            </div>
+        </nav>
+    </header><!--/fim Cabecalho -->
+
+    
+
+    <section id="home" class="d-flex"><!--home -->
+        <div class="container align-self-center"><!--container -->
+            <div class="row"><!--row -->
+                <div class="col-md-12 capa">
+
+                    <div id="carousel-barber" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner"><!--Informaçoes Carrosel-->
+
+                            <div class="carousel-item active">
+                                <h1 class="display-4">Agricultura</h1>
+                                <a href="#informacoes" class="btn btn-lg btn-custom btn-verde">Ler
+                                </a>
+                                <a href="../index.html" class="btn btn-lg btn-custom btn-branco">Página principal
+                                </a>
+                            </div>
+
+                            <div class="carousel-item">
+                                <h1 class="display-3">Nossa História</h1>
+                                <a href="./historia.html" class="btn btn-lg btn-custom btn-branco">
+                                    <i class="fa fa-minus-circle" aria-hidden="true"></i> Ler
+                                </a>
+                            </div>
+
+                        </div><!--/Informaçoes Carrosel-->
+
+                        <!-- Controles -->
+                        <a href="#carousel-barber" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-left fa-3x"></i>
+                        </a>
+
+                        <a href="#carousel-barber" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-right fa-3x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div><!--/row -->
+        </div><!--/container -->
+    </section><!--/home -->
+
+    <section id="informacoes" class="caixa">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="align-center">
+                        <h2 class="text-center"> O que é a agricultura</h2>
+                        <div class="text-center">
+                            <p class="text-justify">Agricultura é um termo que remete para a arte de cultivar os campos,
+                                representando também o trabalho e
+                                técnicas usadas para a obtenção dos produtos agrícolas.
+                            </p>
+                            <p class="text-justify">O economista Colin Clark, responsável pela divisão da economia de um
+                                país em três categorias, afirmou que a
+                                agricultura, juntamente com a silvicultura, a pecuária e a pesca constituem o setor
+                                primário da economia.
+                                Dado que o desenvolvimento das plantas se encontra intimamente relacionado com as
+                                características do solo
+                                (estrutura, textura, conteúdo em substâncias minerais, húmus e microorganismos), o nível
+                                do lençol freático
+                                e o clima (temperatura, precipitação, vento), os rendimentos máximos são obtidos ao
+                                cultivar as plantas que
+                                se adaptam melhor às condições de um determinado lugar.
+                            </p>
+                            <p class="text-justify">As condições climáticas só podem ser melhoradas em circunstâncias
+                                especiais, por exemplo, mediante rega
+                                artificial ou proteção contra agentes adversos. No entanto, as características do solo
+                                podem ser melhoradas
+                                de forma profícua, através da utilização de adubos, corretores de pH ou recorrendo à
+                                drenagem de solos muito
+                                úmidos.
+                                A agronomia é a ciência que analisa as propriedades dos solos e plantas para aperfeiçoar
+                                técnicas usadas na
+                                agricultura. Tendo em conta o aumento da densidade populacional, são cada vez mais
+                                importantes as medidas
+                                para aumentar os rendimentos através do controle das condições climáticas e do solo.
+                                Foram muito importantes
+                                a prática do cultivo em estufas e o desenvolvimento de métodos que impedem que animais
+                                destruam as
+                                plantações.
+                                A utilização agrícola do solo teve início no período Neolítico. Nos diferentes graus de
+                                evolução que se
+                                sucederam até o desenvolvimento atual, teve essencial importância o uso da enxada e do
+                                arado, dos animais de
+                                tiro (carga), a obtenção de adubos artificiais e a introdução de máquinas agrícolas.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="align-center">
+                        <ul class="list-group">
+                            <li class="list-group-item">Cotações do Café
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                            <li class="list-group-item">Cotações da cana
+                                <span class="badge bg-primary rounded-pill">5</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Feijão
+                                <span class="badge bg-danger rounded-pill">9</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Arroz
+                                <span class="badge bg-primary rounded-pill">52</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Milho
+                                <span class="badge bg-primary rounded-pill">770</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Tomate
+                                <span class="badge bg-danger rounded-pill">97</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Soja
+                                <span class="badge bg-danger rounded-pill">97</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Batata-Doce
+                                <span class="badge bg-danger rounded-pill">97</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Melancia
+                                <span class="badge bg-danger rounded-pill">97</span>
+                            </li>
+                            <li class="list-group-item">Cotações do Laranja
+                                <span class="badge bg-danger rounded-pill">97</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="../img/logo.png" width="142">
+                </div>
+                <div class="col-md-2">
+                    <h4>MGBlog</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Empregos</a></li>
+                        <li><a href="">Imprensa</a></li>
+                        <li><a href="">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Comunidades</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Sócios</a></li>
+                        <li><a href="">Desenvolvedores</a></li>
+                        <li><a href="">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>links uteis</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Ajuda</a></li>
+                        <li><a href="">Presentes</a></li>
+                        <li><a href="">Direitos Autorais</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>
+                            <a href=""><img src="../img/facebook.png"></a>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/instagram.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

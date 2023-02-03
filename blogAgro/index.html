@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Bootstrap -->
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script rel="" href="js/login.js"></script>
+
+
+    <title>MGBlog - Notícias</title>
+</head>
+
+<body>
+
+
+    <header>
+        <!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparente">
+            <div class="container">
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logocopia.png">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+
+
+                    <!--Area dos menus-->
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link active navbar-dark btn-outline-light ml-4">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="./html/Agro.html" class="nav-link btn-outline-light ml-4"> Agro</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="" class="nav-link btn-outline-light ml-4 disabled" onclick="acao1()">Vendas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link btn-outline-light ml-4 disabled" onclick="acao1()">Notícias</a>
+                        </li>
+
+                        <li class="nav-item login">
+                            <button type="button" class="btn btn-custom btn-sm btn-verde" data-toggle="modal"
+                                data-target="#loginModal">Login</button>
+                            <!-- <a  type="button" class="btn-custom btn-sm btn-verde" href="./html/login.html">Login</a>  -->
+                        </li>
+                        <li class="nav-item cadastro">
+                            <button type="button" class="btn btn-custom btn-sm btn-verde" data-toggle="modal"
+                                data-target="#formCadastro">Cadastre-se</button>
+                        </li>
+
+                    </ul>
+                    
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--/fim Cabecalho -->
+
+
+    <!-- Modal  Login-->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header cor-headd">
+                    <h5 class="modal-title text-center " id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                required autofocus>
+                            <label for="inputEmail">Endereço de e-mail</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                required>
+                            <label for="inputPassword">Senha</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox mb-3">
+
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Lembrar
+                                senha</label>
+
+
+                        </div>
+                        <div class="form-group row-cols-md-3 text-md-center">
+                            <button type="submit" class="btn btn-custom btn-sm cor-verde">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="options text-center text-md-right mt-1">
+                        <p>Não é um membro?<a href="#" class="blue-text"> Inscrever-se</a></p>
+                        <p>Esqueceu a senha?<a href="#" class="blue-text"> Recuperar-se</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal Cadastro -->
+    <div class="modal fade" id="formCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header cor-headd ">
+                    <h5 class="modal-title text-center " id="exampleModalLabel">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="form-group">
+                            <label for="inputNome">Nome Completo</label>
+                            <input type="nome" class="form-control" id="inputNome" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group ">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword42">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword42" onclick="confirSenha()"
+                                    placeholder="Confirma Senha">
+                            </div>
+                        </div>
+                        <div class=" row-cols-md-3 text-md-center">
+                            <button type="submit" class="btn btn-custon2 btn-sm cor-verde">Cadastrar-se</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-lg btn-google btn-block bg-danger text-uppercase" type="submit"><i
+                            class="fab fa-google mr-2"></i> Faça login no
+                        Google</button>
+                    <button class="btn btn-lg btn-facebook btn-block bg-primary text-uppercase" type="submit"><i
+                            class="fab fa-facebook-f mr-2"></i> Entrar com o
+                        Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal suporte-->
+    <div class="modal fade" id="formSuporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header  cor-headd">
+                    <h5 class="modal-title" id="exampleModalLabel">Suporte Amigo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputNome">Nome Completo</label>
+                            <input type="nome" class="form-control" id="inputNome" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-12">
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                            <label data-error="wrong" data-success="right" for="form8">Sua menssage</label>
+                        </div>
+                        <div class="form-group col-md-6 text-md-center">
+                            <button type="submit" class="btn btn-custon2  cor-verde">Doação</button>
+                           
+                        </div>
+                        <div class="form-group col-md-6 text-md-center">
+                           
+                            <button type="submit" class="btn btn-custon2  cor-verde">Contato</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn cor-verde">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="home">
+        <!-- Início seção home -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <!-- Textos da seção -->
+                    <div class="align-self-center">
+                        <h1 class="display-4">A criatividade é a inteligência divertida.</h1>
+                        <p><b>Disponível para</b>
+                            <a href="" class="btn btn-outline-light">
+                                <i class="fab fa-android fa-lg"></i>
+                            </a>
+                            <a href="" class="btn btn-outline-light">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <!--/fim textos da seção -->
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/fim seção home -->
+
+    <!--/Inicio do ALERT  -->
+    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="margin-left: 50%;">
+        <strong>Esta pagina encontra-se em construção ainda</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!--/fim ALERT -->
+    <section class="caixa">
+        <!--/Início seção saiba -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <h2>Gov.br</h2>
+                        <p><b>gov.br</b> é a plataforma digital de relacionamento do cidadão com o governo
+                            federal
+                            brasileiro que passou a funcionar no dia 31 de julho de 2019.</p>
+                        <p> <a href="https://www.gov.br/pt-br" class="btn btn-success">Veja mais</a></p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/gov.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/FIM seção saiba -->
+
+    <section class="caixa">
+        <!--/Início seção Noticia -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <h2>Noticias Recentes</h2>
+                        <p>Você só encontra por Aqui</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-3">
+                    <div id="carouselNOT" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselNOT" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselNOT" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselNOT" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./img/img-343578-agricultura_soja_producao.png" />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Soja</h4>
+                                    <p>Mercado em Chicago realiza lucros nesta 3ª, mas não desvia foco da
+                                        Argentina</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portograos.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Milho</h4>
+                                    <p>Exportações de milho pelo porto de Paranaguá disparam</p>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/Cafezal MG.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Café</h4>
+                                    <p> Safra mineira de café deve alcançar 27,5 milhões de sacas em 2023
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNOT"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNOT"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--/FIM seção Noticia -->
+    <section class="caixa">
+        <!--/Início seção Tempo -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Clima tempo</h2>
+                    <p>Google Clima Tempo</p>
+                    <img src="https://www.tempo.com/wimages/foto0cbb38d631bc7035558ffd0651df505e.png">
+                    <p class="clima"> <a
+                            href="https://www.google.com/search?q=clima&rlz=1C1RLNS_pt-BRBR1023BR1023&oq=clima&aqs=chrome..69i57j0i131i433i457j0i402l2j0i131i433i512j69i60l3.1929j1j7&sourceid=chrome&ie=UTF-8"
+                            class="btn btn-success">Veja mais</a></p>
+
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <h2>Mapa</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d284861.3901128557!2d-42.270439412135026!3d-20.26730793734856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1672696283125!5m2!1spt-PT!2sbr"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/FIM seção Tempo -->
+
+
+
+    <section class="caixa">
+        <!--/Início seção recursos -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="d-block w-100" src="img/Agropecuaria.jpg" alt="First slide">
+                    <p>A <b>agropecuária</b> é um dos setores mais importantes para a economia brasileira,
+                        sendo muito
+                        ligada ao agronegócio e representando cerca de 20% do Produto Interno Bruto (PIB) do
+                        País. No Brasil, o Ministério da Agricultura, Pecuária e Abastecimento (Mapa) estima
+                        que
+                        um em cada três empregos estão ligados ao setor.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="img/2.png" class="rounded-circle" height="300" width="300">
+                    <p>Esse blog e voltado a informações de alunos temas, criado para aperfeiçoamento das
+                        técnicas
+                        aprendida na faculdade, e para ajudar na área.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/suporte.png" class="img-fluid">
+                    <h4 class="display-4">Suporte amigo</h4>
+                    <p> Dúvidas? Perguntas? Se possível nos ajude a melhorar com seu comentário ou uma
+                        Doação de qualquer quantia!</p>
+                    <button type="button" data-toggle="modal" data-target="#formSuporte"
+                        class="btn btn-custon2 btn-sm cor-verde"> Clique Aqui</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/FIM seção recursos -->
+
+    <footer class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        <a class="text-success" href="">Home</a>
+                        <a class="text-success" href="">Agricultura</a>
+                        <a class="text-success" href="">Saúde</a>
+                        <a class="text-success" href="">Educação</a>
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <a href="" class="btn btn-outline-dark">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-dark ml-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="segundoFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <img src="img/logo.png" width="142">
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>MGBlog</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Empregos</a></li>
+                        <li><a href="">Imprensa</a></li>
+                        <li><a href="">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>Comunidades</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Sócios</a></li>
+                        <li><a href="">Desenvolvedores</a></li>
+                        <li><a href="">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>links uteis</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Ajuda</a></li>
+                        <li><a href="">Presentes</a></li>
+                        <li><a href="">Direitos Autorais</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts Bootstrap -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript (Opcional) -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
